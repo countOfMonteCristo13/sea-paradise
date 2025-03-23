@@ -2,6 +2,7 @@ import './infoCard.css'
 import { IconType } from "react-icons";
 
 interface InfoCardProps{
+    key?:string;
     icon:IconType;
     title:string;
 }

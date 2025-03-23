@@ -10,7 +10,7 @@ const Info = () => {
         <div className='info-section'>
             {
                 infoCards.map(card => (
-                    <InfoCard icon={card.icon} title={card.title}/>
+                    <InfoCard key={card.title}  icon={card.icon} title={card.title}/>
                 ))
             }
         </div>
