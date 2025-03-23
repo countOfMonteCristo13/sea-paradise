@@ -1,0 +1,9 @@
+.btn{
+    position: relative;
+    z-index: 100;
+    padding: 0.6rem 1.2rem;
+    height: fit-content;
+    border-style: none;
+    border-radius: 0.5rem;
+    width: fit-content;
+}

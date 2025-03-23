@@ -1,0 +1,47 @@
+.hero-section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('/hero5.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hero-section__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+
+.hero-section__title{
+    position: relative;
+    font-family: "DynaPuff", system-ui;
+    width: fit-content;
+    font-size: 2.5rem;
+    line-height: 1;
+    z-index: 100;
+    color:#ffffff;
+}
+
+.hero-section button{
+    background:  rgb(241, 99, 33);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    letter-spacing: 0.1cap;
+}
+
+.hero-section button:hover{
+    background: rgb(224, 92, 31);
+}
+

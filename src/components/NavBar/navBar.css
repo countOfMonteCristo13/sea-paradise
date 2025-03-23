@@ -1,0 +1,24 @@
+.nav-bar{
+    position: fixed;
+    top: 1rem;
+    padding: 0.75rem 1.5rem;
+    width: fit-content;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    align-self: center;
+    z-index: 999;
+    transition: all 0.1s ease;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-link{
+    font-size: 1rem;
+}

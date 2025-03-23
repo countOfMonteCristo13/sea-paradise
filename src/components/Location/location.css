@@ -1,0 +1,32 @@
+.location-section{
+    opacity: 0;
+    display: flex;
+    gap: 2rem;
+    padding-right: 2rem;
+    transform: translateY(50px); /* Početna pozicija - 50px ispod */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; 
+}
+
+.location-section.visible {
+    opacity: 1;  /* Postavi opacitet na 1 kada je vidljiv */
+    transform: translateY(0);  /* Pomeraj na normalnu poziciju kada je vidljiv */
+  }
+
+.location-section__text,
+.location-section__img{
+    width: 50%;
+}
+
+
+.location-section__img img{
+    display: block;
+    width: 100%;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.location-section__text{
+    font-size: 1.2rem;
+    color: var(--color-text);
+    line-height: 1.5;
+}

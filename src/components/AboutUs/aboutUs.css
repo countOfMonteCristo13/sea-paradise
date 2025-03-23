@@ -1,0 +1,33 @@
+.about-section{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about-section__text,
+.about-section__img{
+    width: 50%;
+}
+
+.about-section__img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-auto-flow: row;
+    gap: 0.5rem;
+    padding-inline: 0.5rem;
+}
+
+
+.about-section__img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.about-section__text{
+    font-size: 1.2rem;
+    color: var(--color-text);
+    line-height: 1.5;
+}

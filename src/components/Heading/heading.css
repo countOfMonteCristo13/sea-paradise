@@ -1,0 +1,7 @@
+.heading{
+    font-family: var(--font-family-1);
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    color:var(--color-text)
+}
