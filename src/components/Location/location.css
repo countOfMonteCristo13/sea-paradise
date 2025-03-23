@@ -3,13 +3,13 @@
     display: flex;
     gap: 2rem;
     padding-right: 2rem;
-    transform: translateY(50px); /* Početna pozicija - 50px ispod */
+    transform: translateY(50px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out; 
 }
 
 .location-section.visible {
-    opacity: 1;  /* Postavi opacitet na 1 kada je vidljiv */
-    transform: translateY(0);  /* Pomeraj na normalnu poziciju kada je vidljiv */
+    opacity: 1; 
+    transform: translateY(0);  
   }
 
 .location-section__text,
