@@ -1,12 +1,20 @@
-.gallery{
+.gallery-section{
+    opacity: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-auto-flow: row;
     gap: 2rem;
     padding-inline: 2rem;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out,transform 1s ease-in-out;
 }
 
-.gallery img{
+.gallery-section.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-section img{
     width: 100%;
     height: 100%;
     object-fit: cover;
