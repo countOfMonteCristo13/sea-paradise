@@ -1,5 +1,4 @@
 import useShowSectionAnimation from '../../hooks/useShowSectionAnimation/useShowSectionAnimation';
-import { galleryImages } from '../../utils/gallery'
 import Carousel from '../Carousel/Carousel';
 import Heading from '../Heading/Heading'
 import './gallery.css'
@@ -12,23 +11,16 @@ const Gallery = () => {
   return (
     <section id='gallery'>
       <Heading title="Galerija"/>
-      <div id='gallery-section' className={`gallery-section ${isVisble ? 'visible' : ''}`}>
-        {/* {
-          galleryImages.map(img => (
-              <img src={img} alt='img' key={img}/>
-          ))
-        } */}
-        <div style={{ height: '600px', position: 'relative' }}>
+        <div style={{ height: '100%', position: 'relative' }} id='gallery-section' className={`gallery-section ${isVisble ? 'visible' : ''}`}>
             <Carousel
-              baseWidth={300}
+              baseWidth={600}
               autoplay={true}
-              autoplayDelay={3000}
+              autoplayDelay={5000}
               pauseOnHover={true}
               loop={true}
               round={false}
             />
         </div>
-      </div>
     </section>
   )
 }

@@ -1,9 +1,8 @@
 .gallery-section{
     opacity: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-auto-flow: row;
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-inline: 2rem;
     transform: translateY(50px);
     transition: opacity 1s ease-in-out,transform 1s ease-in-out;
